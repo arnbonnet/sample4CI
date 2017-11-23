@@ -38,6 +38,9 @@ public class UserTest {
 
 		Assert.assertEquals(false, user.equals(user2));
 		Assert.assertEquals(true, user.equals(user3));
+		Assert.assertEquals(true, user.equals(user));
+		Assert.assertEquals(false, user.equals(null));
+		Assert.assertEquals(false, user.equals(new String("hello")));
 
 	}
 
